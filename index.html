@@ -708,6 +708,7 @@
   });
 
   const tiles = document.querySelectorAll('.tile');
+  const master = document.getElementById('masterSwitch');
   master.addEventListener('click',()=>{
     const lit = document.body.classList.toggle('lit');
     tiles.forEach(t=>t.setAttribute('data-lit', lit ? 'true':'false'));
